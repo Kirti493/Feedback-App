@@ -1,5 +1,6 @@
 // import { useState } from 'react';
-// import {FaTimes} from 'react-icons/fa';
+
+// import { FaTimes } from 'react-icons/fa';
 import Card from './shared/Card';
 import PropTypes from 'prop-types';
 

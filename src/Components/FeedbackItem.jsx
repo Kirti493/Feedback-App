@@ -18,7 +18,8 @@ function FeedbackItem({ item }) {
         <FaTimes color="purple"></FaTimes>
       </button> */}
 
-      <button className="close">
+      {/* inline onClick event listener. */}
+      <button onClick={() => console.log(item.id)} className="close">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="close"

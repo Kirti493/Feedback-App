@@ -9,6 +9,16 @@ function FeedbackItem({ item }) {
   // const [rating, setRating] = useState(7);
   // const [text, setText] = useState('This is an example of feedback item');
 
+  //2. button onclick function
+  // const handleClick = () => {
+  //   console.log(item.id);
+  // };
+
+  //3. button onclick function catching the id
+  // const handleClick = (id) => {
+  //   console.log(id);
+  // };
+
   return (
     // <div className="card">
     // <Card reversed={true}>
@@ -18,8 +28,16 @@ function FeedbackItem({ item }) {
         <FaTimes color="purple"></FaTimes>
       </button> */}
 
-      {/* inline onClick event listener. */}
-      <button onClick={() => console.log(item.id)} className="close">
+      {/*1. inline onClick event listener. */}
+      <button
+        onClick={() => console.log(item.id)}
+        //2.  Writing a function
+        //  <button onClick={handleClick}
+
+        //3. If we want to pass in the argument like id we can do like this
+        // <button onClick={() => handleClick(item.id)}
+        className="close"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="close"
